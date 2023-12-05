@@ -1,5 +1,5 @@
 import json
-from lib.dynamo_ops import *
+from backend.lib.dynamo_ops import *
 
 
 
