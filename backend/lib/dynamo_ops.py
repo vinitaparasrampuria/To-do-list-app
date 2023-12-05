@@ -3,7 +3,7 @@ import boto3
 
 
 dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('TodoList')
+table = dynamodb.Table('todoApp')
 
 def get_tasks():
     response = table.scan()
