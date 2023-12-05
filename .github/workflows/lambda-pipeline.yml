@@ -30,5 +30,6 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_EC2_METADATA_DISABLED: true
+        AWS_DEFAULT_REGION: us-east-1
       run: |
         aws lambda update-function-code --function-name todoApp --zip-file fileb://lambda_function.zip
