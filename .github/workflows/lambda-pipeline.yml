@@ -32,4 +32,4 @@ jobs:
         AWS_EC2_METADATA_DISABLED: true
         AWS_DEFAULT_REGION: us-east-1
       run: |
-        aws lambda update-function-code --function-name todoApp --zip-file fileb://lambda_function.zip
+        aws lambda update-function-code --function-name todoHandler --zip-file fileb://lambda_function.zip
